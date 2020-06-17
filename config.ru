@@ -5,4 +5,5 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 run ApplicationController
-use PlateCarriersController
+use UserLiftsController
+use UsersController

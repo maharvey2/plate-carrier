@@ -1,4 +1,4 @@
-class PlateCarriersController < ApplicationController
+class UsersController < ApplicationController
 
   # GET: /users
   get "/users" do
