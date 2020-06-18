@@ -11,9 +11,9 @@
     width: 100%;
   }
 
-  /* --- Welcome Page Styles --- */
+  /* --- Index Page Styles --- */
   body {
-    background-color: darkblue;
+    background-color:darkgray;
     color: #333;
     font-family: Sans-Serif;
     line-height: 18px;
@@ -51,17 +51,21 @@
     margin-bottom: 18px;
   }
 
+  .container {
+   
+  }
+
   .main {
     overflow: hidden;
   }
 
   .content {
-    float: left;
+    
     width: 60%; /* 480px / 800px */
   }
 
   .sidebar {
-    background: #eee;
+    background: rgb(150, 158, 150);
     border: 1px solid #ccc;
     float: right;
     padding: 2.08333333333%; /* 5px / 240px */
@@ -112,4 +116,10 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  OL {
+    counter-reset: item;
+    padding: 10px;
+  }
+
 }
