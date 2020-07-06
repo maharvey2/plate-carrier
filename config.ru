@@ -4,8 +4,9 @@ if ActiveRecord::Migrator.needs_migration?
   raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
 end
 
-
-#for PATCH and  DELETE
-use Rack::MethodOverride
-
 run ApplicationController
+use UserLiftsController
+use UsersController
+
+#for PATCH and DELETE
+use Rack::MethodOverride
