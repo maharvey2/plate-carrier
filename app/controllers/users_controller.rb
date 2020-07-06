@@ -12,6 +12,9 @@ class UsersController < ApplicationController
 
   # POST: /users
   post "/users" do
+    if !params[]
+  
+
     redirect "/users"
   end
 
