@@ -14,11 +14,10 @@ class UsersController < ApplicationController
       #login the user in and create session
       session[:user_id] = @user.id #key value pair that actaully logs the users in
       #redirect to user page
-      puts 
-      redirect "users/#{@user.id}"
+      redirect redirect "/users/#{@user.id}"
     else
       #tell user invalid password
-      redirect "/"
+      
       #redirct back to login page
 
     end
@@ -29,7 +28,7 @@ class UsersController < ApplicationController
   end
 
   get '/users/:id' do
-    "user page goes here"
+    erb :users
   end
 
 end
