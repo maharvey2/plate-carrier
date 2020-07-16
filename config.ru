@@ -5,7 +5,7 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 run ApplicationController
-use UserLiftsController
+use LiftsController
 use UsersController
 
 #for PATCH and DELETE
