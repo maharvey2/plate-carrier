@@ -1,4 +1,4 @@
 class LiftsController < ApplicationController
 
-    
+
 end
